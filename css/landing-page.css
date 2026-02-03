@@ -1,0 +1,184 @@
+span {
+    color: var(--red-main) !important ;
+}
+
+.title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+#landing-page h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}  
+
+#landing-page h2 {
+    font-size: 1.25rem;
+}
+
+#landing-page h3 {
+    font-size: 1rem;
+}
+
+#networks .title {
+    text-align: center;
+}
+
+.networks img {
+    width: 70px;
+    margin: 0 15px;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    background-color: var(--red-main);
+    border-radius: 35px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}   
+
+#henri {
+    width: 270px;
+    border-radius: 15px;
+}
+
+.project-cards {
+    position: relative;
+    width: 50vw;
+    height: 25vh;
+    margin-bottom: 2.5em;
+    background-color: var(--red-bg);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.project-cards img {
+    width: 50vw;
+    height: 50%;
+}
+
+.project-cards:nth-child(odd) {
+    left: 45%;
+}
+
+.project-cards h3 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.project-cards p {
+    font-size: 0.75rem;
+    max-width: 90%;
+}
+
+/* Style commun pour tous les boutons/liens */
+.button-links {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: inherit;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--red-bg);
+    transition: transform 0.2s ease-in-out;
+}
+
+.button-links:hover {
+    transform: translateY(-3px);
+}
+
+.button-links .arrow {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+/* Conteneur pour centrer le bouton "Voir mes projets" */
+.button-link {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Style pour les blocs Hardskills et Softskills */
+.skills-list .d-flex {
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--red-bg);
+    margin-bottom: 15px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.skills-list .d-flex:hover {
+    transform: translateY(-3px);
+}
+
+.skills-list .d-flex img:first-child {
+    width: 50px;
+    background-color: var(--bg-button);
+    padding: 6px;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.skills-list .d-flex h4 {
+    text-align: center;
+    margin: 0;
+    flex-grow: 1;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.certif-cards {
+    margin-bottom: 20px;
+    background-color: var(--red-bg);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.certif-cards h4 {
+    font-weight: bold;
+}
+
+.certif-cards img {
+    width: 60px;
+    margin: 20px;
+    background-color: var(--bg-button);
+    padding: 6px;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--red-bg);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 30px;
+}
+
+footer h5 {
+    font-size: 0.8rem;
+}
+
+footer p {
+    font-size: 0.7rem;
+    margin-top: 5px;
+}
+
+footer .d-flex img {
+    width: 30px;
+    margin: 0 10px;
+    background-color: var(--bg-button);
+    border-radius: 25px;
+}
+
+footer ul {
+    font-size: 0.7rem;
+}

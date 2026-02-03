@@ -1,0 +1,103 @@
+:root {
+  --red-main: #8D0909;
+  --red-bg: #470505ae;
+  --chalk-white : #F6F5F2;
+/*  --bg-color : #100c08; */
+  --bg-color : #090909;
+  --bg-button : #c42b2b5e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    color: var(--chalk-white) !important;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}   
+
+body {
+    background-color: var(--bg-color);
+}
+
+/* Pour Chrome, Safari et Edge */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Pour Firefox */
+html {
+    scrollbar-width: none;
+}
+
+/* Pour IE et Edge (ancienne version) */
+body {
+    -ms-overflow-style: none;
+}
+
+main {
+    margin-bottom: 100px;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    min-height: 60vh;
+    padding-top: 40% !important;
+    padding: 5%;
+    max-width: 95vw;
+}
+
+.rod {
+    width: 65vw;
+    margin: 30px;
+    border: 1px solid var(--chalk-white);
+}
+
+.mini-rod {
+    width: 30vw;
+    margin: 20px 0;
+    margin-bottom: 3em;
+    border: 1px solid var(--chalk-white);
+}
+
+.button-link {
+    cursor: pointer;
+}
+
+.button-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--red-bg);
+    min-width: 80%;
+    min-height: 6vh;
+    max-height: 6.5vh;
+    margin: 25px;
+    font-weight: bold;
+    border-radius: 7px;
+    font-size: 1.1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.button-links img, .arrow {
+    background-color: var(--bg-button);
+    padding: 7px;
+    margin-left: 7%;
+    border-radius: 25px;
+    width: 45px;
+
+}
+
+.button-links img:hover {
+    transform: translateX(5px);
+    transition: transform 0.3s ease-in-out;
+}
