@@ -78,7 +78,7 @@ section {
     align-items: center;
     justify-content: center;
     background-color: var(--red-bg);
-    min-width: 80%;
+    min-width: 85%;
     min-height: 6vh;
     max-height: 6.5vh;
     margin: 25px;
