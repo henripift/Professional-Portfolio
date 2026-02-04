@@ -107,7 +107,7 @@ section {
 
 @media screen and (min-width: 1200px) {
     section {
-        padding-top: 17% !important;
+        padding-top: 20% !important;
         max-width: 95vw;
     }
 }

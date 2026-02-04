@@ -63,7 +63,8 @@ span {
 
 
 
-.project-cards:nth-child(odd) {
+/* OU si vous voulez être plus précis */
+#projects > a:nth-of-type(odd) .project-cards {
     left: 40%;
 }
 
@@ -150,6 +151,7 @@ footer {
     background-color: var(--red-bg);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin-top: 30px;
+    min-width: 100vw;
 }
 
 footer h5 {
@@ -173,7 +175,8 @@ footer ul {
 }
 
 
-@media screen and (min-width: 1200px) {
+
+@media screen and (min-width: 900px) {
     html {
         font-size: 28px;
     }
@@ -237,9 +240,5 @@ footer ul {
 
     .mini-rod {
         width: 15vw;
-    }
-
-    footer{
-        min-width: 100vw;
     }
 }

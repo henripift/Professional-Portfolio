@@ -116,7 +116,8 @@ nav img {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 53vw;
+        min-width: 37rem;
+        max-width: 50rem;
         height: 7vh;
         padding: 16px 30px;
         border-radius: 50px;
