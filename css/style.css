@@ -24,6 +24,9 @@ html, body {
 
 body {
     background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Pour Chrome, Safari et Edge */
@@ -51,7 +54,7 @@ a {
 
 section {
     min-height: 60vh;
-    padding-top: 40% !important;
+    padding-top: 50% !important;
     padding: 5%;
     max-width: 95vw;
 }
@@ -78,7 +81,7 @@ section {
     align-items: center;
     justify-content: center;
     background-color: var(--red-bg);
-    min-width: 85%;
+    min-width: 93%;
     min-height: 6vh;
     max-height: 6.5vh;
     margin: 25px;
@@ -100,4 +103,11 @@ section {
 .button-links img:hover {
     transform: translateX(5px);
     transition: transform 0.3s ease-in-out;
+}
+
+@media screen and (min-width: 1200px) {
+    section {
+        padding-top: 17% !important;
+        max-width: 95vw;
+    }
 }

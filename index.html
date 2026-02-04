@@ -16,7 +16,7 @@
                     <span><strong>Accueil</strong></span>
                 </div>
                 <div class="nav-links">
-                    <a href="#landing-page" class="active">
+                    <a href="#landing-page" class="active d-flex align-items-center">
                         <img src="medias/accueil.png"">
                         <p>Accueil</p>
                     </a>
@@ -57,37 +57,47 @@
 
 
         <section id="networks" class="d-flex flex-column align-items-center">
-            <img src="medias/Henri.JPG" alt="photo de moi" id="henri">
-            <div class="rod"></div>
-            <h2 class="title">Mes <span class="red-text">Réseaux</span></h2>
-            <div class="d-flex networks justify-content-center">
-                <a href="https://github.com/henripift" target="_blank"><img src="medias/github.png" alt="logo github"></a>
-                <a href="" target="_blank"><img src="medias/instagram.png" alt="logo instagram"></a>
-                <a href="" target="_blank"><img src="medias/linkedin.png" alt="logo linkedin"></a>
+            <div class="column">
+                <img src="medias/Henri.JPG" alt="photo de moi" id="henri">
             </div>
+            <div class="rod"></div>
+            <div>
+                <h2 class="title">Mes <span class="red-text">Réseaux</span></h2>
+                <div class="d-flex networks justify-content-center">
+                    <a href="https://github.com/henripift" target="_blank"><img src="medias/github.png" alt="logo github"></a>
+                    <a href="" target="_blank"><img src="medias/instagram.png" alt="logo instagram"></a>
+                    <a href="" target="_blank"><img src="medias/linkedin.png" alt="logo linkedin"></a>
+                </div>
+            </div> 
         </section>
 
 
         <section id="projects">
             <h2 class="title">Mes <span class="red-text">Projets</span></h2>
             <div class="mini-rod"></div>
-            <div class="project-cards d-flex flex-column align-items-center">
-                <img src="medias/nightdriver.png" alt="night driver">
-                <h3 class="mt-3">Night Driver - JS</h3>
-                <p>Objectif : Reproduire le célèbre jeu Night Driver en <strong>Javascript</strong>.</p>
-            </div>
-            <div class="project-cards d-flex flex-column align-items-center">
-                <img src="medias/sitehalloween.png" alt="site halloween">
-                <h3 class="mt-3">Site Halloween</h3>
-                <p>Objectif : Réaliser un site web responsive à l'aide de <strong>Bootstrap</strong>.</p>
-            </div>
-            <div class="project-cards d-flex flex-column align-items-center">
-                <img src="" alt="">
-                <h3 class="mt-3">Projet AP - en cours</h3>
-                <p>Objectif : Mise en situation en tant que développeur web. Concevoir un cahier des charges, une liste de tâches et le site.</p>
-            </div>
-            <div class="button-link">
-                <a href="" class="button-links">Voir mes projets<img src="medias/icon arrow.png" alt="flèche"></a>
+            <a href="">
+                <div class="project-cards d-flex flex-column align-items-center">
+                    <img src="medias/nightdriver.png" alt="night driver">
+                    <h3 class="mt-3">Night Driver - JS</h3>
+                    <p>Objectif : Reproduire le célèbre jeu Night Driver en <strong>Javascript</strong>.</p>
+                </div>
+            </a>
+            <a href="">
+                <div class="project-cards d-flex flex-column align-items-center">
+                    <img src="medias/sitehalloween.png" alt="site halloween">
+                    <h3 class="mt-3">Site Halloween</h3>
+                    <p>Objectif : Réaliser un site web responsive à l'aide de <strong>Bootstrap</strong>.</p>
+                </div>
+            </a>
+            <a href="">
+                <div class="project-cards d-flex flex-column align-items-center">
+                    <img src="" alt="">
+                    <h3 class="mt-3">Projet AP - en cours</h3>
+                    <p>Objectif : Mise en situation en tant que développeur web. Concevoir un cahier des charges, une liste de tâches et le site.</p>
+                </div>
+            </a>
+            <div class="d-flex justify-content-center">
+                <a href="" class="button-links">Voir mes projets<img src="medias/icon arrow.png" alt="flèche" class="arrow"></a>
             </div>
         </section>
 
@@ -96,7 +106,7 @@
             <h2 class="title">Mes <span class="red-text">Compétences</span></h2>
             <div class="mini-rod"></div>
             <div class="skills-list">
-                <div class="d-flex">
+                <div class="d-flex mb-3">
                     <img src="medias/dev icon.png" alt="hardskills">
                     <h4>Hardskills</h4>
                     <img src="medias/icon arrow.png" alt="arrow" class="arrow">
@@ -113,7 +123,7 @@
         <section id="certications">
             <h2 class="title">Mes <span class="red-text">Certifications</span></h2>
             <div class="mini-rod"></div>
-              <div class="certif-cards d-flex flex-column align-items-center">
+              <div class="certif-cards d-flex flex-column align-items-center mb-3">
                 <h4>HTMLS Essentials</h4>
                 <div class="d-flex">
                     <img src="medias/icons8-html-50.png" alt="html icon"><img src="medias/cisco.png" alt="cisco logo">
@@ -132,7 +142,7 @@
 
 
     <footer role="contentinfo" class="row">
-        <div class="col-6">
+        <div class="col-6 d-flex flex-column align-items-start">
             <h5>© 2026 PIFTEAU Henri. Tous droits réservés.</h5>
             <h5><strong>PIFTEAU Henri</strong></h5>
             <p>Étudiant en 1<sup>ère</sup> année de BTS SIO</p>
@@ -140,7 +150,7 @@
                 <img src="medias/github.png" alt="logo github"><img src="medias/linkedin.png" alt="logo linkedin"><img src="medias/instagram.png" alt="logo instagram">
             </div>
         </div>
-        <div class="col-6">
+        <div class="col-6 text-start d-flex flex-column align-items-center">
             <ul>
                 <li><a href="#">Accueil</a></li>
                 <li><a href="">À propos</a></li>

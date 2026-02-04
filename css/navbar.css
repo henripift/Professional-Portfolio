@@ -94,6 +94,11 @@ nav img {
         gap: 10px;
     }
 
+    .nav-links a p {
+        margin: 0;
+        line-height: 30px;
+    }
+
     .nav-links a:hover,
     .nav-links a:active {
         background: rgba(255, 255, 255, 0.1);
@@ -108,8 +113,11 @@ nav img {
 /* Desktop styles */
 @media (min-width: 769px) {
     nav {
-        width: auto;
-        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 53vw;
+        height: 7vh;
         padding: 16px 30px;
         border-radius: 50px;
     }
@@ -138,6 +146,11 @@ nav img {
         display: flex;
         align-items: center;
         gap: 8px;
+    }
+
+    .nav-links a p {
+        margin: 0;
+        line-height: 30px;
     }
 
     .nav-links a::before {

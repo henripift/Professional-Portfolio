@@ -25,6 +25,11 @@ span {
     text-align: center;
 }
 
+#networks {
+    /* Par défaut : flex (mobile) */
+    display: flex;
+}
+
 .networks img {
     width: 70px;
     margin: 0 15px;
@@ -56,8 +61,10 @@ span {
     height: 50%;
 }
 
+
+
 .project-cards:nth-child(odd) {
-    left: 45%;
+    left: 40%;
 }
 
 .project-cards h3 {
@@ -70,34 +77,16 @@ span {
     max-width: 90%;
 }
 
-/* Style commun pour tous les boutons/liens */
-.button-links {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    text-decoration: none;
-    color: inherit;
-    padding: 10px 20px;
-    border-radius: 10px;
-    background-color: var(--red-bg);
-    transition: transform 0.2s ease-in-out;
-}
-
 .button-links:hover {
     transform: translateY(-3px);
 }
 
 .button-links .arrow {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     margin-left: 10px;
 }
 
-/* Conteneur pour centrer le bouton "Voir mes projets" */
-.button-link {
-    text-align: center;
-    margin-top: 30px;
-}
 
 /* Style pour les blocs Hardskills et Softskills */
 .skills-list .d-flex {
@@ -181,4 +170,76 @@ footer .d-flex img {
 
 footer ul {
     font-size: 0.7rem;
+}
+
+
+@media screen and (min-width: 1200px) {
+    html {
+        font-size: 28px;
+    }
+
+    .rod {
+        width: 30vw;
+    }
+
+    #landing-page h3 {
+        max-width: 35%;
+    }
+
+    .button-links {
+        min-width: 45% !important;
+        width: 45% !important;
+        min-height: 8vh;
+        max-height: 8.5vh;
+    }
+    
+    /* Si le bouton est dans un conteneur, cibler aussi : */
+    #projects .button-links {
+        min-width: 45% !important;
+        width: 45% !important;
+        min-height: 8vh;
+        max-height: 8.5vh;
+    }
+
+    #networks {
+        display: grid !important; /* !important pour surcharger Bootstrap */
+        grid-template-columns: 50% 50%; /* 3 colonnes égales par exemple */
+        gap: 20px;
+        align-items: start; /* ou center selon votre besoin */
+    }
+
+    #networks .rod {
+        display: none;
+    }
+
+    
+
+    #networks .column:last-child{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #henri {
+        width: 90%;
+    }
+    
+
+    .project-cards {
+        width: 35vw;
+        height: 45vh;
+    }
+
+    .project-cards img {
+        width: 35vw;
+        height: 50%;
+    }
+
+    .mini-rod {
+        width: 15vw;
+    }
+
+    footer{
+        min-width: 100vw;
+    }
 }
